@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ForgotPassWord">
+
+    <TextView
+        android:id="@+id/password_reset_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="All coding"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/namereset"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_50sdp"-->
+<!--        android:hint="user name"-->
+<!--        android:textSize="@dimen/_20sdp" />-->
+    <EditText
+        android:id="@+id/password_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật Khẩu"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_20sdp"
+        />
+
+    <EditText
+        android:id="@+id/respassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_20sdp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confom"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/btn_orange"
+        android:text="Confom "
+        android:layout_gravity="center"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+</LinearLayout>

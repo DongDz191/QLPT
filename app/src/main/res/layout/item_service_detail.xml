@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="serviceDetail"
+            type="com.example.duan1.model.ServiceDetail" />
+        <variable
+            name="service"
+            type="com.example.duan1.model.Service" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:background="@drawable/shadow_vertical"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp"
+            android:text='@{serviceDetail.date}' />
+
+        <LinearLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_22sdp"
+                android:text='@{service.name}'
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:srcCompat="@drawable/my_xao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='@{String.format("%,d", service.price)}'
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp"
+            android:text='@{serviceDetail.number + ""}' />
+
+       <FrameLayout
+           android:layout_width="@dimen/_70sdp"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:text='@{(String.format("%,d", serviceDetail.number*service.price)),default = 15.000}'
+               android:textColor="@color/black"
+               android:textSize="@dimen/_9ssp" />
+
+           <ImageView
+               android:id="@+id/imgDelete"
+               android:layout_width="@dimen/_12sdp"
+               android:layout_height="@dimen/_12sdp"
+               android:layout_gravity="bottom|end"
+               android:layout_margin="@dimen/_10sdp"
+               app:srcCompat="@drawable/delete" />
+
+       </FrameLayout>
+    </LinearLayout>
+</layout>

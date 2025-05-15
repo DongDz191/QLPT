@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentNav.HomeFragmnet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+<!--        <LinearLayout-->
+<!--            android:visibility="invisible"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginLeft="@dimen/_50sdp"-->
+<!--            android:gravity="center_vertical">-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/ImageAvatar"-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginRight="@dimen/_20sdp"-->
+<!--                android:src="@drawable/avatar"-->
+<!--                app:civ_border_color="@color/black"-->
+<!--                app:civ_border_width="2dp"-->
+<!--                app:civ_circle_background_color="@color/white"-->
+<!--                android:visibility="invisible"/>-->
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+
+<!--                android:layout_width="@dimen/_70sdp"-->
+<!--                android:layout_height="@dimen/_70sdp"-->
+<!--                android:layout_marginRight="@dimen/_20sdp"-->
+<!--                android:visibility="invisible"-->
+<!--                android:src="@drawable/logo2x"-->
+<!--                app:civ_border_color="@color/black"-->
+<!--                app:civ_border_width="2dp"-->
+<!--                app:civ_circle_background_color="@color/white" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="@dimen/_175sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hi"-->
+<!--                        android:textColor="@color/orange"-->
+<!--                        android:textSize="@dimen/_20sdp"-->
+<!--                        android:textStyle="normal" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_20sdp"-->
+<!--                        android:layout_height="@dimen/_20sdp"-->
+<!--                        android:src="@drawable/icon_hi" />-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvName"-->
+<!--                    android:layout_width="@dimen/_135sdp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Chủ trọ "-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_15sdp"-->
+<!--                        android:layout_height="@dimen/_15sdp"-->
+<!--                        android:layout_marginRight="@dimen/_10sdp"-->
+<!--                        android:src="@drawable/human" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvPos"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="position"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:textStyle="italic" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/roomManage"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/room_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Quản Lý Phòng"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/contractManage"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/contract_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Quản Lý Hợp Đồng"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seviceManage"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/service_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Quản Lý Dịch Vụ"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/createAccount"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/account_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Quản Lý Tài Khoản"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/quanLyDoanhThu"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/revenue_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Quản Lý Doanh Thu"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Thoat"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/exit_menu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Đăng Xuất"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

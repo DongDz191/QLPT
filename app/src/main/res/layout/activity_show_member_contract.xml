@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowMemberContract"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_people"/>
+
+            <TextView
+                android:id="@+id/id_phong"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_3sdp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_clock_start"/>
+            <TextView
+                android:id="@+id/id_clock_start"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_3sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_clock_stop"/>
+            <TextView
+                android:id="@+id/id_clock_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_3sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_contract"/>
+            <TextView
+                android:id="@+id/id_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:textSize="@dimen/_11ssp"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/_3sdp"/>/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:baselineAligned="false"
+            android:src="@drawable/ic_room" />
+
+        <TextView
+            android:id="@+id/id_room"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center|start"
+            android:paddingLeft="@dimen/_3sdp"/> />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách hành viên"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="#CC000000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvHopDong"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <Button
+        android:id="@+id/btn_back_contract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/orange"
+        android:layout_marginTop="10dp"
+        android:text="Quay lại" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFloor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        android:text="Tầng 1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

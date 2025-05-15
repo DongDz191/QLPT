@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".fragment.DoanhThuFragment">
+
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tab_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:tabSelectedTextColor="@color/orange"-->
+<!--        />-->
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="monospace"
+        android:layout_marginLeft="100dp"
+        android:text="DOANH THU"
+        android:textColor="#111211"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/coin_all"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="monospace"
+
+        android:text="0 vnđ"
+        android:textColor="#0C49A5"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:text="từ ngày"
+                android:layout_marginLeft="50dp"
+                android:background="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/btn_tuNgay"
+                android:layout_marginRight="10dp"
+                />
+
+            <EditText
+                android:id="@+id/txt_tuNgay"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/white"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif-medium"
+                android:hint="dd-MM-yyyy"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+
+            >
+            <Button
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:text="đên ngày"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/btn_denNgay"
+                />
+
+            <EditText
+                android:id="@+id/txt_denNgay"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="dd-MM-yyyy"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thống kê"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="140dp"
+
+        android:id="@+id/btn_doanhThu"
+        />
+
+
+</LinearLayout>

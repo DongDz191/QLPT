@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="Back Button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DỊCH VU CHI TIẾT  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_2sdp"
+
+            android:background="@drawable/btn_orange"
+            android:gravity="center"
+            android:text="Ngày"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_76sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:background="@drawable/btn_orange"
+            android:gravity="center"
+            android:text="Sản phẩm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_76sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:background="@drawable/btn_orange"
+            android:gravity="center"
+            android:text="Số lượng"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_7ssp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/_78sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:background="@drawable/btn_orange"
+            android:gravity="center"
+            android:text="Thành tiền"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Tổng tiền: 15.000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center|bottom"
+        android:text="Lưu ý: giá dịch vụ tính theo giá thời điểm hiện tại."
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9ssp" />
+</LinearLayout>

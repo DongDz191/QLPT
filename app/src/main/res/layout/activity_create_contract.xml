@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="roomType"
+            type="com.example.duan1.model.RoomType" />
+        <variable
+            name="room"
+            type="com.example.duan1.model.Room" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:contentDescription="Back Button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HỢP ĐỒNG  "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvRoomCode2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:gravity="center"
+                android:text='@{"Phòng: " + room.roomCode, default = "Phòng: P102"}'
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/_69sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='Thời hạn:'
+                    android:textSize="@dimen/_12ssp" />
+                <LinearLayout
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imgPrevious"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:srcCompat="@drawable/ic_previous" />
+
+                    <EditText
+                        android:id="@+id/edNumber"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:inputType="number"
+                        android:background="@drawable/border_black"
+                        android:gravity="center"
+                        android:textSize="@dimen/_11ssp"
+                        android:text="1">
+
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/imgNext"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:srcCompat="@drawable/ic_next" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/_69sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='tháng'
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/_69sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='Chỉ số điện'
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/edElectricNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:inputType="number"
+                    android:background="@drawable/border_item_gray" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/_69sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='Chỉ số nước'
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/edWaterNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:inputType="number"
+                    android:background="@drawable/border_item_gray" />
+
+            </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='@{"Tiền phòng: "+String.format("%,d", roomType.rentCode) + " VND", default = "Tiền phòng: 2.000.000 VND"}'
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_22sdp"
+                    android:gravity="center|start"
+                    android:text='@{"Tiền điện: "+String.format("%,d", roomType.electronicFee) + " VND", default = "Tiền phòng: 2.000.000 VND"}'
+                    android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_22sdp"
+                android:gravity="center|start"
+                android:text='@{"Tiền nước: "+String.format("%,d", roomType.waterFee) + " VND", default = "Tiền nước: 2.000.000 VND"}'
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_22sdp"
+                android:gravity="center|start"
+                android:text='Thành viên:'
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMember"
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:id="@+id/imgAdd"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_add" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/btn_grey"
+                    android:text="Xóa phòng"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCreateContract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/btn_orange"
+                    android:text="Tạo hợp đồng"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

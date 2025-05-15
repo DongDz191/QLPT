@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="50dp"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Dịch Vụ Mới" />
+
+        <EditText
+            android:layout_width="0dp"
+
+            android:layout_height="40dp"
+            android:hint="Nhập dịch vụ"
+            android:id="@+id/edtEditDv"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight=".25"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Giá dịch vụ" />
+
+        <EditText
+            android:id="@+id/edtEditPricedv"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/_15ssp"
+            android:inputType="number"
+
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Nhập giá"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30ssp"
+            android:text="Thêm Ảnh"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/setImageEdit"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+
+
+            android:src="@drawable/add_cam_new">
+
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>

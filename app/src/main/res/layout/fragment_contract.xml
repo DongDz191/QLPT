@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="contract"
+            type="com.example.duan1.model.Contract" />
+        <variable
+            name="numberEnd"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ContractFragment"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            android:text='@{"Hợp đồng số: " + contract.idContract, default="Hợp đồng số: 1"}' />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_20sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="Ngày bắt đầu:"
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="Ngày hết hạn:"
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="Phòng:"
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="Số ngày còn lại:"
+                    android:textSize="@dimen/_10ssp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text='@{contract.statingDate}'
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text='@{contract.endingDate}'
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text='@{contract.roomCode}'
+                    android:textSize="@dimen/_10ssp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text='@{numberEnd}'
+                    android:textSize="@dimen/_10ssp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center|top">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCheckOut"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_26sdp"
+                android:background="@drawable/btn_grey"
+                android:text="Trả phòng"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnExtension"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:background="@drawable/btn_orange"
+                android:text="Gia hạn"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

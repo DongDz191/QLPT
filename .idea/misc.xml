@@ -1,0 +1,64 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_clock_start.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_clock_stop.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_contract.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_delete.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_people.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/drawable-v24/ic_room.xml" value="0.1635" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_account_manager.xml" value="0.29743589743589743" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_contract_manage.xml" value="0.136" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_create_contract.xml" value="0.264" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_create_room.xml" value="0.29743589743589743" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_room_avalible.xml" value="0.20512820512820512" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_room_empty.xml" value="0.25" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_room_manage.xml" value="0.12" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_service_manager.xml" value="0.14957264957264957" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_show_member_contract.xml" value="0.22" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/activity_splash.xml" value="0.16485507246376813" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/dialog_extension_contract.xml" value="0.20512820512820512" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/dialog_member.xml" value="0.29743589743589743" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/dialog_number_service_detail.xml" value="0.20512820512820512" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/fragment_effect.xml" value="0.22" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/fragment_expire.xml" value="0.152" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/fragment_home_fragmnet.xml" value="0.29743589743589743" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/fragment_invoice.xml" value="0.20512820512820512" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/fragment_wait.xml" value="0.136" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/item_account.xml" value="0.33" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/item_contract.xml" value="0.264" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/item_service.xml" value="0.5" />
+        <entry key="..\:/Study/Ky4/DuAn1/app/src/main/res/layout/item_show_contract.xml" value="0.1264957264957265" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/border_edit_orange.xml" value="0.1795" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/border_gray.xml" value="0.241" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/border_search.xml" value="0.234" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/btn_grey.xml" value="0.241" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/btn_orange.xml" value="0.241" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/drawable/ed_border_grey.xml" value="0.2545" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_create_contract.xml" value="0.33" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_member.xml" value="0.264" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_re_password.xml" value="0.25" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_room_avalible.xml" value="0.3625" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_room_empty.xml" value="0.3527777777777778" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/activity_room_manage.xml" value="0.5" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/dialog_member.xml" value="0.33" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/fragment_contract.xml" value="0.3625" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/fragment_invoice.xml" value="0.3625" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/fragment_member.xml" value="0.3625" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/fragment_service.xml" value="0.3484375" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/item_floor.xml" value="0.2" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/item_member_contract.xml" value="0.176" />
+        <entry key="..\:/Study/Ky4/PRO1121/DuAn1/app/src/main/res/layout/item_room.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

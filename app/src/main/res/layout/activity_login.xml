@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_16sdp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/user2"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="WELCOME BACK"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/btn_grey"
+
+        android:hint="Tên Tài Khoản"
+        android:textSize="@dimen/_14ssp" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/btn_grey"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:id="@+id/tv_quenmk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:text="Quên Mật Khẩu"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_blue"
+        android:text="Đăng Nhập"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>

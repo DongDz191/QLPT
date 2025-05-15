@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|start">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="THÀNH VIÊN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp"
+        tools:context=".MemberActivity">
+
+        <LinearLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Họ tên:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Ngày sinh:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="CCCD/CMND:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Số điện thoại:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Quê quán:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Hình ảnh:"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:textSize="@dimen/_10ssp"
+                android:background="@drawable/border_edit_orange" />
+
+            <EditText
+                android:id="@+id/edBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:textSize="@dimen/_10ssp"
+                android:focusable="false"
+                android:background="@drawable/border_edit_orange"
+                android:drawableEnd="@drawable/ic_date"/>
+
+            <EditText
+                android:id="@+id/edCitizenIdentification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:inputType="number"
+                android:textSize="@dimen/_10ssp"
+                android:background="@drawable/border_edit_orange" />
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:inputType="number"
+                android:textSize="@dimen/_10ssp"
+                android:background="@drawable/border_edit_orange" />
+            <EditText
+                android:id="@+id/edHometown"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_26sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+
+                android:textSize="@dimen/_10ssp"
+                android:background="@drawable/border_edit_orange" />
+            <ImageView
+                android:id="@+id/imgMember"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_add_image" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/btn_grey"
+            android:fontFamily="sans-serif"
+            android:text="Hủy bỏ"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="@dimen/_8ssp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/btn_orange"
+            android:fontFamily="sans-serif"
+            android:text="Thêm thành viên"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_8ssp"/>
+    </LinearLayout>
+</LinearLayout>

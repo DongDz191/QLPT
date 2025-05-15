@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="@dimen/_450sdp">
+<LinearLayout
+    android:layout_width="@dimen/_70sdp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="@dimen/_70sdp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:src="@drawable/user"
+        android:id="@+id/editImgAccount"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight=".25"
+                android:gravity="center"
+
+                android:text="Tài Khoản"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtuser"
+
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+
+                android:background="@drawable/rounded_edittext"
+                android:hint="Nhập tên tài khoản"
+                android:padding="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="Mật khẩu"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPass"
+
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:background="@drawable/rounded_edittext"
+
+                android:hint="Nhập mật khẩu"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="Họ và tên"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtName"
+
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+
+
+                android:background="@drawable/rounded_edittext"
+                android:hint="Nhập họ và tên"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight=".25"
+
+                android:gravity="center"
+                android:text="Số điện thoại"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+
+                android:background="@drawable/rounded_edittext"
+                android:hint="Nhập số điện thoại"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

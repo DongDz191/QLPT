@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.duan1">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo2x"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo2x"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoActionBar"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RevenueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowMemberContract"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ContractManageActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".RoomAvalibleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateContractActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomEmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".CreateRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateRoomTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
+    </application>
+
+</manifest>
